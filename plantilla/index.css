@@ -5,10 +5,17 @@
 body{
 	font-family: verdana;
 	transition:1s;
+	background: rgba(0,0,0,0.2);
 }
 a{
 	color: rgb(200,150,0);
 	text-decoration: none;
+}
+#contenido{
+	background: white;
+	margin: 1em auto;
+	max-width: 1200px;
+	padding: 0.3em;
 }
 #header-pagina{
 	background: rgba(0,0,0,0.5);
@@ -38,5 +45,5 @@ a{
 }
 #aside-pagina{
 	border: 1px dashed rgba(0,0,0,0.5);
-	max-width: 30%;
+	width: 20%;
 }
