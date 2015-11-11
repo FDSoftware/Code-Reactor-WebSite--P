@@ -4,8 +4,11 @@
 }
 body{
 	font-family: verdana;
-
 	transition:1s;
+}
+a{
+	color: rgb(200,150,0);
+	text-decoration: none;
 }
 #header-pagina{
 	background: rgba(0,0,0,0.5);
@@ -20,4 +23,20 @@ body{
 	display: inline-block;
 	margin: 0.3em;
 	padding: 0.3em;
+}
+#nav-pagina li:hover{
+	background: rgba(0,0,0,0.7);
+}
+#section-pagina, #aside-pagina{
+	display: inline-block;
+	vertical-align: top;
+	min-height: 200px;
+}
+#section-pagina{
+	border: 1px solid rgba(0,0,0,0.5);
+	max-width: 60%;
+}
+#aside-pagina{
+	border: 1px dashed rgba(0,0,0,0.5);
+	max-width: 30%;
 }
