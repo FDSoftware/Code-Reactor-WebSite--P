@@ -1,0 +1,23 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: verdana;
+
+	transition:1s;
+}
+#header-pagina{
+	background: rgba(0,0,0,0.5);
+	padding: 2em;
+}
+#nav-pagina{
+	background: rgba(0,0,0,0.6);
+}
+#nav-pagina li{
+	border: 1px solid rgba(0,0,0,0.5);
+	border-radius: 0.3em;
+	display: inline-block;
+	margin: 0.3em;
+	padding: 0.3em;
+}
