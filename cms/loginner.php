@@ -29,4 +29,3 @@ if($nick == "admin" && $password == "LaMierdaNoEsParaRegalarlaSinoParaTirarselaC
 
 // y al final pateamos al usuario al index
 header("location: login.php?e=no-sabe-escribir");
- ?>
