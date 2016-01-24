@@ -63,7 +63,7 @@ class Post
 	private $conexion;
 
 	/**
-	* Error al buscar la url
+	* Error al buscar la url, es true si hay error, de lo contrario es false
 	*/
 	public $error;
 
