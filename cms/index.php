@@ -20,6 +20,7 @@ if(isset($_SESSION["id"])){
 <head>
 	<meta charset="utf-8">
 	<title><?php echo $Title; ?></title>
+	<link rel="stylesheet" type="text/css" href="Index.css">
 </head>
 <body>
 	<header>
