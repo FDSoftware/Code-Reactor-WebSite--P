@@ -4,6 +4,8 @@ session_start();
 
 header('Content-Type: text/html; charset=utf-8');
 
+include('mundiales.php');
+
 // definimos una variable para usar en todo lo demás
 if(isset($_SESSION["id"])){
 	$root = true;
@@ -17,18 +19,19 @@ if(isset($_SESSION["id"])){
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Code Reactor</title>
+	<title><?php echo $Title; ?></title>
 </head>
 <body>
 	<header>
-		<h1>Code Reactor</h1>
+		<h1><?php echo $Title; ?></h1>
 	</header>
 	<nav>
 		<ul>
 			<li>
-			<a href="index.php">INICIO</a>
+			<a href="index.php"><?php echo $Home; ?></a>
 			</li>
 			<?php 
+			// comprobamos que es administrador para mostrar el enlace correcto
 			if ($root){
 				echo "<li>\r\n";
 				echo '<a href="logout.php" title="Salir" >Salir</a>';
@@ -45,7 +48,7 @@ if(isset($_SESSION["id"])){
 		<article></article>
 	</section>
 	<footer>
-		<p>El material publicado en este sitio pertenece a CodeReactor, si es de uso libre se avisará, de lo contrario todos los derechos están reservados</p>
+		<p><?php echo $FooterInfo; ?></p>
 	</footer>
 </body>
 </html>
