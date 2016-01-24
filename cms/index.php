@@ -56,6 +56,9 @@ if($url == "" || empty($url)){
 	</nav>
 	<section>
 		<article></article>
+		<!-- mensaje de error:
+		Estamos editando este post vuelva mas tarde maquinola cuantica :V
+		-->
 	</section>
 	<footer>
 		<p><?php echo $FooterInfo; ?></p>
