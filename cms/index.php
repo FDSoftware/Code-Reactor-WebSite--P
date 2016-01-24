@@ -2,15 +2,24 @@
 // iniciamos la variable de sección
 session_start();
 
+$url = $_POST['blog'];
+
 header('Content-Type: text/html; charset=utf-8');
 
 include('mundiales.php');
+include('funciones.php');
 
 // definimos una variable para usar en todo lo demás
 if(isset($_SESSION["id"])){
 	$root = true;
 }else{
 	$root = false;
+}
+
+if($url == "" || empty($url)){
+	$blog = none;
+}else{
+	$blog = new Post($url);
 }
 ?>
 
@@ -52,4 +61,5 @@ if(isset($_SESSION["id"])){
 		<p><?php echo $FooterInfo; ?></p>
 	</footer>
 </body>
+<!-- que haces viendo esto -->
 </html>
