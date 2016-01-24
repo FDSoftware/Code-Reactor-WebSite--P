@@ -22,3 +22,15 @@ $NotFound = "El tal sitio que busca, no existe :P";
 
 // Información del Pie de página
 $FooterInfo = "El material publicado en este sitio pertenece a CodeReactor, si es de uso libre se avisará, de lo contrario todos los derechos están reservados";
+
+// host de la base de datos
+$DBhost = "localhost";
+
+// usuario de la base de datos
+$DBuser = "normalizado";
+
+// nombre de la base de datos
+$DBname = "mydatabase";
+
+// clave de la base de dato
+$DBkey = "n0-t3-l4-d´réü";
