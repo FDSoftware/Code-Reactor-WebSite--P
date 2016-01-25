@@ -53,6 +53,11 @@ class Post
 	private $fecha = "";
 
 	/**
+	* Esta son la cantidad de visitas que ha recibido el post
+	*/
+	private $visita = 0;
+
+	/**
 	* Este parametro es el que se le pasa a index.php para que busque el post
 	*/
 	private $url = "";
@@ -86,24 +91,32 @@ class Post
 		$sql = 'SELECT * FROM contenido WHERE url=' . base64($url, true) . '';
 		$resultado = $conexion->query($sql);
 
+		// comprobamos que hemos cazado algo..
 		if($resultado->num_rows == 0)
 		{
+			// no hay nada :'(
 			$this->titulo = "";
 			$this->contenido = "";
 			$this->fecha = "";
+			$this->visita = 0;
 			$this->url = "";
 			$this->error = true;
 			return -1;
 		}
+
 		if($resultado->num_rows != 1)
 		{
 			echo 'Error para nada esperado' . "\r\n";
 			exit();
 		}
+
+		// si todo va bn sacamos todo a un array para luego guardarlo en
+		// las variables miembro de la clase
 		$array = $resultado->fetch_assoc();
 		$this->titulo = $array['titulo'];
 		$this->contenido = $array['contenido'];
 		$this->fecha = $array['fecha'];
+		$this->visita = $array['visita'];
 		$this->url = $array['url'];
 		$this->error = false;
 
@@ -135,6 +148,16 @@ class Post
 	public function getFecha()
 	{
 		return $this->fecha;
+	}
+
+
+	/**
+	* Retorna el número de visita del post
+	* @return visita int
+	*/
+	public function getVisita()
+	{
+		return $this->visita;
 	}
 
 	/**
