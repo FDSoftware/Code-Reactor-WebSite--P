@@ -1,0 +1,40 @@
+/* Estilo de la sección de login */
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: verdana;
+}
+#caja{
+	background: #c0c0c0;
+	border: 1px solid #b0b0b0;
+	border-radius: 0.4em;
+	bottom: auto;
+	display: block;
+	height: 400px;
+	left: auto;
+	margin: auto;
+	right: auto;
+	padding: 0.5em;
+	top: auto;
+	width: 400px;
+}
+#formulario{
+	text-align: center;
+}
+#formulario input[type=password], #formulario input[type=text]{
+	border: 1px solid #212121;
+	border-radius: 0.3em;
+	padding: 0.4em;
+	width: 70%;
+}
+#formulario input[type=submit]{
+	background: black;
+	border-radius: 0.4em;
+	border: 1px solid #212121;
+	color: yellow;
+	font-size: 1.2em;
+	min-width: 5em;
+}
