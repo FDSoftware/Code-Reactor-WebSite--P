@@ -21,7 +21,7 @@ $Home = "INICIO";
 $NotFound = "El tal sitio que busca, no existe :P";
 
 //mensajes a mostrar, bah si te parece :V
-$EnEdicion = "Estamos editando este post vuelva mas tarde maquinola cuantica :V"
+$EnEdicion = "Estamos editando este post vuelva mas tarde maquinola cuantica :V";
 
 // Información del Pie de página
 $FooterInfo = "El material publicado en este sitio pertenece a CodeReactor, si es de uso libre se avisará, de lo contrario todos los derechos están reservados";
