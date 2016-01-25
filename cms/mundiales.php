@@ -19,8 +19,8 @@ $Home = "INICIO";
 
 // Este es el mensaje de error que saldrá cuando se intenta buscar un post que no existe
 $NotFound = "El tal sitio que busca, no existe :P";
-//Error.php menzajes a mostrar, bah si te parece :V
-$Eliminado = "El Post esta eliminado :P"
+
+//mensajes a mostrar, bah si te parece :V
 $EnEdicion = "Estamos editando este post vuelva mas tarde maquinola cuantica :V"
 
 // Información del Pie de página
